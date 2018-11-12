@@ -12,7 +12,7 @@ $ composer require skywing/douban-resource -vvv
 ## Usage
 use Skywing\Douban\Douban;
 
-//init  
+// init  
 
 $douban = new Douban();  
 

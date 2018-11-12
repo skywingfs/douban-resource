@@ -12,14 +12,16 @@ $ composer require skywing/douban-resource -vvv
 ## Usage
 use Skywing\Douban\Douban;
 
-//init
+//init  
+
 $douban = new Douban();  
 
 // book's isbn10/isbn13 code  
 
 $isbn = '9787115473899';
 
-// get a book entity
+// get a book entity  
+```
 try {
     $book = $douban->getBook($isbn);
     if ($book) {
@@ -36,7 +38,7 @@ try {
 } catch (\Exception $exception) {
     // handle exception
 }
-
+```
 
 
 ## Contributing

@@ -1,0 +1,32 @@
+{
+  "name": "skywing\/douban-resource",
+  "description": "A simple book SDK,which get a book information from douban.The future will support movie from douban.",
+  "keywords": [
+    "douban",
+    "book",
+    "movie",
+    "laravel",
+    "package"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "skywing",
+      "email": "1749588982@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "phpunit/phpunit": "^7.4",
+    "mockery/mockery": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Skywing\\Douban\\": "src"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  }
+}

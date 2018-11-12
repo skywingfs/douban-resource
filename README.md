@@ -10,6 +10,8 @@ $ composer require skywing/douban-resource -vvv
 ```
 
 ## Usage
+```
+<?php
 use Skywing\Douban\Douban;
 
 // init  
@@ -21,7 +23,7 @@ $douban = new Douban();
 $isbn = '9787115473899';
 
 // get a book entity  
-```
+
 try {
     $book = $douban->getBook($isbn);
     if ($book) {

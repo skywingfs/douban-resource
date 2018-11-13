@@ -404,6 +404,7 @@ class Book implements Transform
             'catalog' => $this->catalog,
             'summary' => $this->summary,
             'numRaters' => $this->numRaters,
+            'pages' => $this->pages,
             'average' => $this->average,
             'cover' => $this->cover
 

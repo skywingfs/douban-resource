@@ -10,9 +10,38 @@ $ composer require skywing/douban-resource -vvv
 ```
 
 ## Usage
+```
+<?php
+use Skywing\Douban\Douban;
 
-TODO
-异常处理，单元测试，文档说明，代码检测
+// init  
+
+$douban = new Douban();  
+
+// book's isbn10/isbn13 code  
+
+$isbn = '9787115473899';
+
+// get a book entity  
+
+try {
+    $book = $douban->getBook($isbn);
+    if ($book) {
+        // use as an array
+        $book->toArray();
+        
+        // or get json format
+        $book->toJSON();
+        
+        // also, get property directly is allowed
+        $book->getTitle();
+        $book->getPrice();
+    }
+} catch (\Exception $exception) {
+    // handle exception
+}
+```
+
 
 ## Contributing
 

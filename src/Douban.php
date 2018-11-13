@@ -64,6 +64,7 @@ class Douban extends AbstractDouban implements CreateEntity
             ->setPublicationDate($params['pubdate'])
             ->setPublisher($params['publisher'])
             ->setSummary($params['summary'])
+            ->setPages($params['pages'])
             ->setCover($params['images']['large'])
             ->setTags(array_column($params['tags'], 'name'))
             ->setAverage($params['rating']['average'])

@@ -83,6 +83,29 @@ class Book implements Transform
     private $cover;
 
     /**
+     * @var string book's pages
+     */
+    private $pages;
+
+    /**
+     * @return string
+     */
+    public function getPages(): string
+    {
+        return $this->pages;
+    }
+
+    /**
+     * @param string $pages
+     * @return $this
+     */
+    public function setPages(string $pages)
+    {
+        $this->pages = $pages;
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getNumRaters(): string
